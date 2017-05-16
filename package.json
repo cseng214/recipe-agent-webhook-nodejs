@@ -1,0 +1,31 @@
+{
+  "name": "recipe-agent-webhook-nodejs",
+  "version": "0.0.1",
+  "description": "A sample Node.js app using Express 4",
+  "author": "Caroline Seng",
+  "private": true,
+  "engines": {
+    "node": "~6.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "node index.js",
+    "deploy": "gcloud beta functions deploy yourAction --trigger-http --stage-bucket <storage_bucket_name>"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "cool-ascii-faces": "1.3.4",
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "Apache Version 2.0"
+}
